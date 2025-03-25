@@ -17,6 +17,10 @@ var addTask = () => {
     var taskContainer = document.createElement("p");
     var editButton = document.createElement("button");
 
+    taskContainer.addEventListener("click", () => {
+      taskContainer.style.textDecoration = "line-through";
+    });
+
     var deleteButton = document.createElement("button");
 
     taskListContainer.appendChild(taskList);
@@ -45,4 +49,5 @@ var update = (e) => {
 };
 
 addBtn.addEventListener("click", addTask);
+
 taskListContainer.addEventListener("click", update);
