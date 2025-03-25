@@ -1,0 +1,76 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#container {
+  border: 0.5px solid #24a124;
+  box-shadow: 0px 0px 3px gray;
+  width: 350px;
+  height: 30px;
+  position: relative;
+  top: 25px;
+  font-size: 18px;
+  display: flex;
+  border-radius: 4px 0px 0px 4px;
+}
+#container input {
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 4px;
+  border-radius: 4px 0px 0px 4px;
+}
+#container button {
+  height: 100%;
+  width: 20%;
+  background-color: #24a124;
+  font-size: 16px;
+  color: #efefef;
+  font-weight: 600;
+}
+#task-container {
+  width: 350px;
+}
+#task-container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+#task-container ul li {
+  height: 30px;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 40px;
+
+  gap: 15px;
+  border: 1px solid green;
+  font-size: 18px;
+  padding: 4px;
+}
+#task-container ul li p {
+  flex-basis: 80%;
+  overflow: hidden;
+}
+#task-container ul li button:nth-child(3) {
+  border: none;
+  color: red;
+  font-weight: 600;
+}
+#task-container ul li button:nth-child(2) {
+  border: none;
+  color: blue;
+  font-weight: 600;
+}
